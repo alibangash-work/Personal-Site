@@ -1,0 +1,9 @@
+export function Footer() {
+  return (
+    <footer className="py-8 px-6 md:px-12 lg:px-24 border-t border-border">
+      <p className="text-sm text-muted-foreground">
+        &copy; {new Date().getFullYear()} Ali Bangash. All rights reserved.
+      </p>
+    </footer>
+  );
+}
