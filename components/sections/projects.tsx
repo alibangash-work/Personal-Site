@@ -7,51 +7,93 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    title: "HealthTech Analytics Platform",
-    subtitle: "Real-Time Healthcare Data Lakehouse",
+    title: "AI-Powered Data Platform",
+    subtitle: "Intelligent Data Infrastructure",
     description:
-      "Designed a scalable healthcare lakehouse on AWS S3 and Databricks using Delta Lake, ingesting HL7/FHIR clinical data from multiple hospital systems.",
-    technologies: ["AWS S3", "Databricks", "Delta Lake", "Apache Spark", "Airflow"],
+      "Advanced AI-driven data platform designed for building scalable, intelligent data systems.",
+    technologies: ["Python", "Machine Learning", "Data Engineering"],
     highlights: [
-      "Multi-hospital EHR integration",
-      "Population health analytics",
-      "Clinical reporting automation",
+      "AI-powered analytics",
+      "Scalable architecture",
+      "Intelligent data processing",
     ],
     links: {
-      demo: "#",
-      github: "#"
+      github: "https://github.com/alibangash-work/AI-Powered-Data-Platform-"
     }
   },
   {
-    title: "FinTech Data Platform",
-    subtitle: "Streaming Fraud Detection & ML Feature Store",
+    title: "Enterprise Data Governance & Quality",
+    subtitle: "Data Quality & Compliance Platform",
     description:
-      "Developed real-time streaming pipelines using Kafka, Spark Streaming, and Snowflake to process high-volume financial transactions for fraud detection.",
-    technologies: ["Kafka", "Spark Streaming", "Snowflake", "Databricks", "MLflow"],
+      "Comprehensive enterprise solution for managing data governance, quality assurance, and compliance across distributed systems.",
+    technologies: ["Python", "Governance", "Data Quality"],
     highlights: [
-      "Real-time fraud detection",
-      "ML feature engineering pipeline",
-      "Risk analytics dashboard",
+      "Enterprise governance framework",
+      "Data quality monitoring",
+      "Compliance automation",
     ],
     links: {
-      demo: "#",
-      github: "#"
+      github: "https://github.com/alibangash-work/Enterprise-Data-Governance-and-Data-Quality-Platform"
     }
   },
   {
-    title: "Retail Intelligence Hub",
-    subtitle: "Customer Analytics & Recommendation Engine",
+    title: "Healthcare Data Pipeline",
+    subtitle: "Clinical Data Integration Platform",
     description:
-      "Built a comprehensive retail analytics platform processing customer behavior data, inventory metrics, and sales patterns for personalized recommendations.",
-    technologies: ["Azure Synapse", "Databricks", "Python", "TensorFlow", "Power BI"],
+      "Specialized healthcare data pipeline for integrating, processing, and analyzing clinical and patient data from multiple sources.",
+    technologies: ["Python", "Healthcare", "ETL"],
     highlights: [
-      "Customer segmentation models",
-      "Real-time inventory optimization",
-      "Personalized recommendation system",
+      "Multi-source EHR integration",
+      "HIPAA compliance ready",
+      "Clinical analytics",
     ],
     links: {
-      demo: "#",
-      github: "#"
+      github: "https://github.com/alibangash-work/Healthcare-Data-Pipeline-Your-USP-"
+    }
+  },
+  {
+    title: "Lakehouse Architecture (Databricks)",
+    subtitle: "Modern Lakehouse Implementation",
+    description:
+      "Production-grade lakehouse architecture following Databricks best practices, combining data lake and data warehouse benefits.",
+    technologies: ["Python", "Databricks", "Delta Lake"],
+    highlights: [
+      "Unified data architecture",
+      "ACID compliance",
+      "Real-time analytics",
+    ],
+    links: {
+      github: "https://github.com/alibangash-work/Lakehouse-Databricks-Style-"
+    }
+  },
+  {
+    title: "Modern Data Platform",
+    subtitle: "Contemporary Data Architecture",
+    description:
+      "Contemporary data platform leveraging modern technologies for real-time processing, analytics, and machine learning operations.",
+    technologies: ["Python", "Real-time Processing", "Cloud-native"],
+    highlights: [
+      "Real-time data processing",
+      "Cloud-native design",
+      "ML-ready infrastructure",
+    ],
+    links: {
+      github: "https://github.com/alibangash-work/Modern-Data-Platform"
+    }
+  },
+  {
+    title: "Real-Time Fraud Detection",
+    subtitle: "Streaming ML Fraud Detection",
+    description:
+      "Real-time fraud detection system using streaming data processing and machine learning models for immediate threat identification.",
+    technologies: ["Python", "ML", "Real-time Streaming"],
+    highlights: [
+      "Real-time pattern detection",
+      "ML-based fraud models",
+      "Sub-second latency",
+    ],
+    links: {
+      github: "https://github.com/alibangash-work/Real-Time-Fraud-Detection"
     }
   },
 ];
@@ -138,13 +180,22 @@ export function Projects() {
                 </ul>
 
                 {/* Action buttons */}
-                <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="flex-1 group/btn">
-                    <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:translate-x-0.5 transition-transform" />
-                    View Project
-                  </Button>
-                  <Button variant="outline" size="sm" className="group/btn">
-                    <Github className="w-4 h-4 group-hover/btn:scale-110 transition-transform" />
+                <div className="flex gap-3 w-full">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="flex-1 group/btn"
+                    asChild
+                  >
+                    <a 
+                      href={project.links.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
+                      <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                      View on GitHub
+                    </a>
                   </Button>
                 </div>
               </div>

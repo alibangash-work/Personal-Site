@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { VisitorStats } from "@/components/visitor-stats";
 
 const techStack = [
   "AWS",
@@ -21,7 +22,7 @@ export function Hero() {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,7 +43,7 @@ export function Hero() {
                 Ali Bangash
               </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium mb-6 leading-relaxed">
-                Solutions Data Architect & Senior Data Engineer
+                 Data Solutions Architect & Lead Data Engineer
               </h2>
             </motion.div>
 
@@ -102,6 +103,9 @@ export function Hero() {
             </div>
           </motion.div>
         </motion.div>
+
+        {/* Stats Section */}
+        <VisitorStats />
 
         {/* Scroll indicator */}
         <motion.div

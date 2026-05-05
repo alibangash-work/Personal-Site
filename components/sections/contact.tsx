@@ -12,9 +12,9 @@ const contactLinks = [
   },
   {
     label: "Phone",
-    href: "tel:+16506643363",
+    href: "tel:+17866868586 ",
     icon: Phone,
-    value: "(650) 664-3363",
+    value: "(786) 686-8586",
   },
   {
     label: "LinkedIn",
