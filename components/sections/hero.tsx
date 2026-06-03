@@ -43,7 +43,7 @@ export function Hero() {
                 Ali Bangash
               </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium mb-6 leading-relaxed">
-                 Data Solutions Architect & Lead Data Engineer
+                 Data Architect & Lead Data Engineer
               </h2>
             </motion.div>
 
