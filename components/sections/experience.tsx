@@ -5,7 +5,7 @@ import { Building2, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "Data Solutions Architect",
+    title: "Data Architect",
     company: "ScienceSoft",
     period: "FEB 2024 – PRESENT",
     location: "Remote",
@@ -51,7 +51,7 @@ const experiences = [
     ],
   },
   {
-    title: "ETL & Data Warehouse Engineer",
+    title: "Data Engineer",
     company: "FourKites",
     period: "JAN 2015 – DEC 2018",
     location: "Chicago, IL",
