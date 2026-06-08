@@ -1,7 +1,7 @@
 const VISITORS_KEY = "visitors:count";
 
 // In-memory fallback for local development
-let memoryCount = 1000;
+let memoryCount = 500;
 
 async function getVisitorCount(): Promise<number> {
   // Try to use Vercel KV if available
